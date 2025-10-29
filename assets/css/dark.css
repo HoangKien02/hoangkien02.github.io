@@ -1,0 +1,95 @@
+body {
+  background-color: #2D2D2D;
+  color: #FAFAF3;
+}
+
+a {
+  color: #85E89D;
+}
+
+a:hover,
+a:visited {
+  color: #85E89D;
+}
+
+pre,
+code {
+  border: 1px solid #3d3d3d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #79B8FF;
+}
+
+.site-title,
+.site-title {
+  color: #FAFAF3;
+}
+
+.site-title:hover,
+.site-title:visited {
+  color: #FAFAF3;
+}
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #3d3d3d;
+  background-color: #2C2C2C;
+}
+
+.site-footer {
+  border-top: 1px solid #3d3d3d;
+  background-color: #2C2C2C;
+}
+
+.site-nav .page-link {
+  color: #85E89D;
+}
+
+.post .post-header .post-title {
+  color: #9ECBFF;
+  font-size: 24px;
+}
+
+.post .post-content p {
+  word-break: break-all;
+}
+
+.post .post-content p > code {
+  color: #f92672;
+}
+
+.post .post-content h1,
+.post .post-content h2 {
+  font-size: 24px;
+  border-left: 10px solid #79B8FF;
+  padding-left: 5px;
+}
+
+.post .post-content h3 {
+  font-size: 22px;
+  border-left: 5px solid #79B8FF;
+  padding-left: 5px;
+}
+
+.post .post-content table th {
+  background-color: #555555;
+  color: white;
+}
+
+.post .post-content table tr {
+  background-color: #aaaaaa;
+}
+
+.post-histories h2 {
+  font-size: 24px;
+}
+
+.home .post-meta {
+  color: white;
+}

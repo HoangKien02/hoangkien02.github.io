@@ -1,0 +1,36 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+toc: false
+---
+
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+<h3 id="{{ tag[0] }}" class="tag-title">{{ tag[0] }}</h3>
+<ul>
+  {% for post in tag[1] %}
+  <li>
+    {{ post.date | date: date_format }}: <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<script>
+  // Add class `active` to current tag title
+  (function () {
+    try {
+      if (window.location.hash && window.location.hash.length > 1) {
+        const hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+        const dom = document.getElementById(hash);
+        if (dom != null) {
+          dom.className += " active";
+        }
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  })();
+</script>

@@ -1,0 +1,221 @@
+@import "./monokai.css";
+
+body {
+  overflow-y: scroll;
+}
+
+.wrapper {
+  max-width: calc(900px - (30px * 2));
+}
+
+@media screen and (min-width: 601px) {
+  .home .post-meta {
+    font-size: large;
+    font-family:
+      'Noto Sans Mono CJK JP',
+      /* Noto */
+      'Source Han Code JP',
+      /* 源ノ角 */
+      'Ricty Diminished',
+      /* Inconsolata, Circle M+ 1m */
+      'Ricty',
+      /* Inconsolata, Migu 1M */
+      Consolas,
+      /* 英字 (WindowsVista+) */
+      Menlo,
+      /* 英字 (macOS10.6+) */
+      Monaco,
+      /* 英字 (Classic Mac OS+) */
+      'Roboto Mono',
+      /* 英字 (Android4+) */
+      'Courier New',
+      /* Courier (macOS10.3+?, iOS4+?, WindowsXP+?) */
+      Meiryo,
+      /*'メイリオ',               /* 日本語 (WindowsVista+) */
+      monospace;
+  }
+
+  .home .post-link {
+    display: inline;
+    font-size: unset;
+  }
+
+  .home .post-list li {
+    margin-bottom: 0;
+  }
+
+  .home .post-list h3 {
+    margin-bottom: 0;
+  }
+}
+
+.post .post-header .tags {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post .post-header .tags .tag {
+  margin-right: 5px;
+}
+
+.post .post-content {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.post .post-content p {
+  word-break: break-word;
+  margin-bottom: 1.5em;
+}
+
+.post .post-content h2 {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+.post .post-content h3 {
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.post .post-content blockquote {
+  font-size: 17px;
+}
+
+.post .post-content ul,
+.post .post-content ol {
+  margin-bottom: 1.5em;
+}
+
+.post .post-content .mermaid {
+  text-align: center;
+}
+
+.post .tag-title.active {
+  background-color: #3f3f3f;
+}
+
+@media screen and (max-width: 1360px) {
+  .post #toc {
+    width: unset;
+    position: relative;
+    right: unset;
+    top: unset;
+    border: unset;
+    background-color: unset;
+    padding: unset;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .post #toc {
+    width: 200px;
+    position: fixed;
+    right: calc(50% - 660px);
+    top: 100px;
+    border: 1px solid #3d3d3d;
+    background-color: #2C2C2C;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .post #toc li {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .post #toc li ul {
+    margin-left: 20px;
+  }
+}
+
+.post .embed-container {
+  margin-bottom: 15px;
+}
+
+.social-buttons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-buttons .social-button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: small;
+}
+
+.social-buttons .twitter-button {
+  color: white;
+  background-color: #0091C5;
+  font-weight: bold;
+}
+
+.social-buttons .hatena-bookmark-button {
+  color: white;
+  background-color: #0091C5;
+  font-weight: bold;
+}
+
+span.tag {
+  display: inline-block;
+  border: 1px solid #3d3d3d;
+  background-color: #2C2C2C;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+pre,
+code,
+kbd,
+samp,
+var,
+.git-histories {
+  font-family:
+    'Noto Sans Mono CJK JP',
+    /* Noto */
+    'Source Han Code JP',
+    /* 源ノ角 */
+    'Ricty Diminished',
+    /* Inconsolata, Circle M+ 1m */
+    'Ricty',
+    /* Inconsolata, Migu 1M */
+    Consolas,
+    /* 英字 (WindowsVista+) */
+    Menlo,
+    /* 英字 (macOS10.6+) */
+    Monaco,
+    /* 英字 (Classic Mac OS+) */
+    'Roboto Mono',
+    /* 英字 (Android4+) */
+    'Courier New',
+    /* Courier (macOS10.3+?, iOS4+?, WindowsXP+?) */
+    Meiryo,
+    /*'メイリオ',               /* 日本語 (WindowsVista+) */
+    monospace;
+}
+
+pre,
+code {
+  font-size: 16px;
+}
+
+.post-content pre {
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.post-content p > code,
+.post-content li > code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* mermaid */
+.mermaid {
+  background-color: white;
+  margin-bottom: 20px;
+}
