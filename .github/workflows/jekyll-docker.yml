@@ -28,6 +28,6 @@ jobs:
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          projectName: hoangkien
+          projectName: hoangkien.uk
           directory: ./_site
           gitHubToken: ${{ secrets.GTOKEN }}
